@@ -1,0 +1,36 @@
+.viewdata{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.viewdata h1{
+	position: relative;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	padding:15px 0;
+	font-size: 3.5rem;
+	color: #194056;
+	font-weight: 800;
+} 
+.viewdata .gallery{
+	position: relative;
+	width: 90%;
+	height: auto;
+	margin:0 auto;
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	grid-gap: 10px;
+} 
+.viewdata .gallery img{
+	position: relative;
+	width: 100%;
+	height: 400px;
+}
+.viewdata .gallery img:hover{
+	opacity: 0.8;
+	cursor: pointer;
+}

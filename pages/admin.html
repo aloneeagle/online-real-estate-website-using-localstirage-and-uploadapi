@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>online real estate -- admin</title>
+	<link rel="stylesheet" href="../css/admin.css"/>
+</head>
+<body>
+	<div class="main">
+		<header id="header" class="header">
+			<a href="../index.html" title="back to homepage" class="backHome">Home</a>
+			<div class="right">
+				<p class="userActiveName">
+					Welcome Admin :&nbsp;<span></span>
+				</p>
+				<button 
+				type="button" 
+				class="logout"
+				>
+				Logout
+				</button>
+			</div>
+			<a href="admin.html" class="logo">ONLINE REAL-ESTATE<span>[USER DASHBOARD]</span></a>
+			<ul>
+				<li class="active"><a title="upload data">Upload</a></li>
+				<li><a href="viewData.html" title="view data">View Data</a></li>
+				<li><a href="viewReport.html" title="view report">View Report</a></li>
+				<li><a href="gallery.html" title="gallery">Gallery</a></li>
+			</ul>
+		</header><!-- /header -->
+		<div class="data">
+			<h1>Upload Here</h1>
+			<form class="uploadForm" id="uploadForm">
+				<div class="form-group">
+					<input type="text" name="name" placeholder="Property name " />
+				</div>
+				<div class="form-group">
+					<input type="radio" name="category" value="Land" />Land
+					<input type="radio" name="category" value="House" />House
+					<input type="radio" name="category" value="Property" />Property
+					<input type="radio" name="category" value="Other" />Other
+				</div>
+				<div class="form-group">
+					<input type="text" name="location" placeholder="Property location" />
+				</div>
+				<div class="form-group">
+					<textarea  name="details" placeholder="Property details..." ></textarea>
+				</div>
+				<div class="form-group">
+					<input type="file" name="image" />
+				</div>
+				<div class="form-group">
+					<input type="submit" name="uploadFileSubmit" value="Upload" />
+				</div>
+
+			</form>
+		</div>
+	</div>
+
+	<!-- script -->
+	<script src="../js/admin.js"></script>
+</body>
+</html>
